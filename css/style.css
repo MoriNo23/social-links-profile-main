@@ -98,6 +98,11 @@ nav a {
     height: 500px;
     padding: 30px;
   }
+  .profile__about {
+    padding-bottom: 2.6em;
+    height: 1em;
+    font-size: small;
+  }
   main {
     padding: 4% 0;
   }
@@ -113,6 +118,6 @@ nav a {
   }
   nav a {
     padding: 0.8em;
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
 }
