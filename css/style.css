@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --background-color: hsl(0, 0%, 12%);
+  --primary-color: hsl(0, 0%, 8%);
+  --secondary-color: hsl(0, 0%, 20%);
+  --acent-primary-color: hsl(0, 0%, 100%);
+  --acent-secondary-color: hsl(75, 94%, 57%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--primary-color);
+  color: var(--acent-primary-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* layout */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 30% 0;
+  flex-wrap: nowrap;
+}
+/* main container */
+.social_links__container {
+  background-color: var(--background-color);
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  height: max-content;
+  gap: 20px;
+  align-self: center;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+/* figure */
+.profile__figure {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+.profile__description h2 {
+  font-size: medium;
+  color: var(--acent-secondary-color);
+}
+
+.profile__figure img {
+  width: 35%;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+/* nav */
+nav {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+  text-align: center;
+  font-weight: bolder;
+  flex-wrap: nowrap;
+}
+nav a {
+  background-color: var(--secondary-color);
+  color: var(--acent-primary-color);
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+@media (min-width: 1000px) {
+  .social_links__container {
+    width: 25%;
+    height: 500px;
+    padding: 30px;
+  }
+  main {
+    padding: 4% 0;
+  }
+  nav {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 0.8em;
+    text-align: center;
+    font-weight: bolder;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+  nav a {
+    padding: 0.8em;
+    font-size: 0.6em;
+  }
+}
